@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>IntelliList</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</script>
+
+<style>
+.ui-page-theme-c {
+    background-color: #ff6666;
+}
+.task-list {
+  width: 250px;
+  float: left;
+  margin: 0 5px;
+  background-color: #e3e3e3;
+  min-height: 240px;
+  border-radius: 10px;
+  padding-bottom: 15px;
+}
+#delete-div {
+	color: white;
+  background-color: #ff6666;
+  border: 3px dotted #000;
+  margin: 10px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+}
+#add-task {
+	color: white;
+	text-shadow: 2px 5px 10px #000000;
+	text-align: center;
+}
+</style>
+
+</head>
+
+<body>
+
+	<!-- HOME -->
+	<div data-role="page" id="home" class="ui-page-theme-c">
+		<!-- HEADER -->
+		<div data-role="header">
+		  <div data-role="navbar">
+		    <ul>
+		      <li><a href="#user">Erik</a></li>
+					<li><a href="#home">Home</a></li>
+		      <li><a href="#notifications">Notifications</a></li>
+		    </ul>
+		  </div>
+		</div>
+
+		<div data-role="main" class="ui-content">
+			<form class="ui-filterable" class="data-content-b">
+      	<input id="myFilter" data-type="search">
+    	</form>
+
+			<ol data-role="listview" data-filter="true" data-input="#myFilter" data-autodividers="true" data-inset="true" >
+	      <li><a href="#item">Complejidad computacional<span class="ui-li-count">25</span></a></li>
+				<li><a href="#">Clases particulares<span class="ui-li-count">Done!</span></a></li>
+				<li><a href="#">Sistemas inteligentes<span class="ui-li-count">2</span></a></li>
+	      <li><a href="#">Interfaces inteligentes<span class="ui-li-count">6</span></a></li>
+	      <li><a href="#">Robotica computacional<span class="ui-li-count">13</span></a></li>
+  	  </ol>
+			<ul data-role="listview" data-inset="true">
+
+	      <li data-icon="plus"><a href="#">Crear lista ... </a></li>
+  	  </ul>
+	  </div>
+	</div>
+
+	<!-- USER -->
+	<div data-role="page" id="user" class="ui-page-theme-c">
+		<!-- HEADER -->
+		<div data-role="header">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#user">Erik</a></li>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#notifications">Notifications</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div data-role="main" class="ui-content">
+
+		</div>
+	</div>
+
+	<!-- NOTIFICATIONS -->
+	<div data-role="page" id="notifications" class="ui-page-theme-c">
+		<!-- HEADER -->
+		<div data-role="header">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#user">Erik</a></li>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#notifications">Notifications</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div data-role="main" class="ui-content">
+
+		</div>
+	</div>
+
+	<!-- ITEM -->
+	<div data-role="page" id="item" class="ui-page-theme-c">
+		<!-- HEADER -->
+		<div data-role="header">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#user">Erik</a></li>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#notifications">Notifications</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div data-role="main" class="ui-content">
+				<div id="add-task">
+					<h1>Add a task</h1>
+				</div>
+				  <form id="todo-form">
+				    <input type="text" placeholder="Title" />
+				    <textarea placeholder="Descrtipion"></textarea>
+				    <input type="text" placeholder="Due Date (dd/mm/yyyy)" />
+						<input type="button" class="btn btn-primary" value="Add files" />
+
+				  </form>
+					<div id ="add-task">
+						<a href="#pagetwo" class="ui-btn ui-btn-inline">Add Task</a>
+						<a href="#pagetwo" class="ui-btn ui-btn-inline">Clear Data</a>
+					</div>
+
+		</div>
+
+</body>
+
+</html>
