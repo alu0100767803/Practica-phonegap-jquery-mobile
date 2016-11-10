@@ -10,6 +10,7 @@
 </script>
 
 <style>
+
 .ui-page-theme-c {
     background-color: #ff6666;
 }
@@ -36,6 +37,7 @@
 	text-shadow: 2px 5px 10px #000000;
 	text-align: center;
 }
+
 </style>
 
 </head>
@@ -48,10 +50,13 @@
 		<div data-role="header">
 		  <div data-role="navbar">
 		    <ul>
-		      <li><a href="#user">Erik</a></li>
-					<li><a href="#home">Home</a></li>
-		      <li><a href="#notifications">Notifications</a></li>
+		      	<li><a href="#user">Erik</a></li>
+				<li><a href="#home">Home</a></li>
+		     	<li><a href="#notifications">Notifications</a></li>
+		     	<li><a href="#cuenta">Cuenta</a></li>
+		      	<li><a href="#ajustes">Ajustes</a></li>
 		    </ul>
+
 		  </div>
 		</div>
 
@@ -72,7 +77,8 @@
 	      <li data-icon="plus"><a href="#">Crear lista ... </a></li>
   	  </ul>
 	  </div>
-	</div>
+</div>
+
 
 	<!-- USER -->
 	<div data-role="page" id="user" class="ui-page-theme-c">
@@ -80,9 +86,11 @@
 		<div data-role="header">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#user">Erik</a></li>
+					<li><a href="#user">Usuario</a></li>
 					<li><a href="#home">Home</a></li>
 					<li><a href="#notifications">Notifications</a></li>
+					<li><a href="#cuenta">Cuenta</a></li>
+		      		<li><a href="#ajustes">Ajustes</a></li>
 				</ul>
 			</div>
 		</div>
@@ -101,6 +109,8 @@
 					<li><a href="#user">Erik</a></li>
 					<li><a href="#home">Home</a></li>
 					<li><a href="#notifications">Notifications</a></li>
+					<li><a href="#cuenta">Cuenta</a></li>
+		      		<li><a href="#ajustes">Ajustes</a></li>
 				</ul>
 			</div>
 		</div>
@@ -109,6 +119,106 @@
 
 		</div>
 	</div>
+
+	<!-- -->
+	<div data-role="page" id="cuenta" class="ui-page-theme-c">
+		<!-- HEADER -->
+		<div data-role="header">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#user">Erik</a></li>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#notifications">Notifications</a></li>
+					<li><a href="#cuenta">Cuenta</a></li>
+		     		<li><a href="#ajustes">Ajustes</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div data-role="main" class="ui-content">
+			<a href="#detalles-cuenta" data-role="button"> Detalles de la cuenta</a>
+			<a href="#notificaciones" data-role="button"> Notificaciones</a>
+			<a href="#" data-role="button" data-icon="lock">Cerrar sesión</a>
+		</div>
+	</div>
+
+
+<div data-role="page" id="ajustes" class="ui-page-theme-c">
+		<!-- HEADER -->
+		<div data-role="header">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#user">Erik</a></li>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#notifications">Notifications</a></li>
+					<li><a href="#cuenta">Cuenta</a></li>
+		     		<li><a href="#ajustes">Ajustes</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div data-role="main" class="ui-content">
+		<a href="#" data-role="button" data-icon="location"> Localizacion </a>
+		<a href="#" data-role="button" data-icon="info"> Información</a>
+		<a href="#" data-role="button" data-icon="mail"> Cambiar dirección de correo electrónico</a>
+		<a href="#" data-role="button" data-icon="shop"> Tienda</a>
+		<a href="#" data-role="button" data-icon="delete"> Eliminar cuenta</a>
+	</div>
+
+		
+</div>
+
+<div data-role="page" id="detalles-cuenta" class="ui-page-theme-c">
+	<div data-role="header">
+		<div data-role="navbar">
+				<ul>
+					<li><a href="#user">Erik</a></li>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#notifications">Notifications</a></li>
+					<li><a href="#cuenta">Cuenta</a></li>
+		     		<li><a href="#ajustes">Ajustes</a></li>
+				</ul>
+			</div>
+	</div>
+
+	<div data-role="main" class="ui-content">
+		<a href="#" data-role="button" data-icon="camera"> Foto </a>
+		<a href="#" data-role="button" data-icon="user"> Cambiar nombre</a>
+		<a href="#" data-role="button" data-icon="mail"> Cambiar dirección de correo electrónico</a>
+		<a href="#" data-role="button"> Conectarte a Facebook</a>
+		<a href="#" data-role="button"> Conectarte a Google+</a>
+	</div>
+	
+</div>
+
+<div data-role="page" id="notificaciones" class="ui-page-theme-c" data-add-back-btn="true" data-back-btn-text="Back">
+	<div data-role="header">
+		<div data-role="navbar">
+				<ul>
+					<li><a href="#user">Erik</a></li>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#notifications">Notifications</a></li>
+					<li><a href="#cuenta">Cuenta</a></li>
+		     		<li><a href="#ajustes">Ajustes</a></li>
+				</ul>
+			</div>
+	</div>
+
+	<div data-role="main" class="ui-content">
+		<fieldset data-role="controlgroup">
+			<label><input type="checkbox" data-iconpos="right"> Correo electrónico</label>
+			<label><input type="checkbox" data-iconpos="right"> Vibración</label>
+			<label><input type="checkbox" data-iconpos="right"> Sonido</label>
+			<label><input type="checkbox" data-iconpos="right"> Luz notificaciones</label>
+
+
+		</fieldset>
+	</div>
+	
+</div>
+
+<!-- -->
+
 
 	<!-- ITEM -->
 	<div data-role="page" id="item" class="ui-page-theme-c">
@@ -119,10 +229,11 @@
 					<li><a href="#user">Erik</a></li>
 					<li><a href="#home">Home</a></li>
 					<li><a href="#notifications">Notifications</a></li>
+					<li><a href="#cuenta">Cuenta</a></li>
+		     		<li><a href="#ajustes">Ajustes</a></li>
 				</ul>
 			</div>
 		</div>
-
 		<div data-role="main" class="ui-content">
 				<div id="add-task">
 					<h1>Add a task</h1>
